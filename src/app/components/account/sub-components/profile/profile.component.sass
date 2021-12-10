@@ -1,0 +1,26 @@
+@import '../../../../../stylus/colors'
+
+.avatar
+  position: relative
+  height: 40px
+  width: 40px
+  background: $primary-color
+  border: 1px solid $primary-color
+  border-radius: 50%
+  overflow: hidden
+  cursor: pointer
+  transition: 0.5s
+
+  &.light
+    background: $primary-light
+    border: 1px solid $primary-light
+
+  &.light.expand
+    width: 70px
+    height: 70px
+
+  & img
+    position: absolute
+    left: 50%
+    height: 100%
+    transform: translateX(-50%)

@@ -1,0 +1,89 @@
+@import '../../../../stylus/colors'
+
+.form-body
+  display: flex
+  flex-direction: column
+
+  height: 100vh
+
+  background: $primary-light
+
+.form-body-section
+  overflow: hidden auto
+
+  flex: 1 0
+
+  padding: 1rem 24px
+
+  & > h2
+    margin-bottom: 7px
+
+  & > p
+    margin: 0
+
+    font-size: 14px
+    color: $color-grey
+
+.form-form-cpf
+  label
+    width: 100%
+
+.form-input
+  position: relative
+
+  display: flex
+  flex-flow: row wrap
+  align-items: flex-end
+  gap: 1.5rem
+
+.form-h3
+  margin: 1rem 0 3px 0
+
+  font-size: 1rem
+  font-weight: 600
+
+.form-input-text
+  width: 100%
+  padding: 7px
+
+  border: 1px solid $color-grey
+  border-radius: 2px
+
+  transition: 0.3s
+
+.form-button
+  max-height: 31px
+  padding: 7px 16px
+
+  border: 1px solid $primary-color
+  background: $primary-color
+
+  color: $color-white
+
+  transition: 0.3s
+
+  &:hover
+    border: 1px solid $primary-smooth
+    background: $primary-smooth
+
+.form-error
+  border: 1px solid $color-red
+  box-shadow: 0 0 5px hsla(0, 0%, 100%, 0.7)
+
+  color: $color-red
+
+.form-error-msg
+  position: absolute
+  left: 0
+  top: 77px
+
+  color: $color-red
+  font-size: 14px
+
+@media (min-width: 475px)
+  .form-form-cpf
+    label
+      width: auto
+
+  .form-input-text
+    width: 300px

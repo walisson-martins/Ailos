@@ -1,0 +1,55 @@
+@import '../../../../stylus/colors'
+
+.card
+  display: flex
+  flex-flow: column nowrap
+  min-width: 300px
+  padding: 24px
+  border: 1px solid $color-silver
+  background: $color-white
+  animation: 1s SlideLeft ease forwards
+
+  & h3
+    font-size: 18px
+    font-weight: 600
+
+  &-subtitle
+    font-size: 14px
+    color: $color-grey
+
+  &-content-row
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    gap: 1rem
+
+    margin-top: 1.5rem
+
+  &-content-row-icon
+    font-size: 28px
+    color: $color-grey
+
+  &-content-row-icon.suspenso
+    color: $color-red
+
+  &-content-row-icon.regular
+    color: $color-green
+
+  & :where(h5, h3, p)
+    margin: 0
+
+  &-category
+    font-size: 14px
+    color: $color-grey
+
+  &-category-content
+    font-size: 16px
+
+  &-link-wrapper
+    margin-top: 2rem
+
+  &-link-wrapper a
+    font-size: 16px
+    font-weight: 600
+    color: $primary-color
+    text-decoration: none

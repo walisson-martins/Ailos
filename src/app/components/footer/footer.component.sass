@@ -1,0 +1,38 @@
+@import '../../../stylus/colors'
+
+.footer
+  background: $color-white
+  display: flex
+  flex-flow: row wrap
+  gap: 10px
+  padding: 1rem 1.5rem
+
+  & > button
+    flex: 1 0
+    min-width: 165px
+    padding: 13px 1rem
+
+  &.footer-button
+    background: $color-white
+    border: 1px solid $primary-color
+    color: $primary-color
+    transition: 0.3s
+
+  &.footer-button:hover
+    border: 1px solid $primary-smooth
+    background: $primary-smooth
+    color: $color-white
+
+  &.footer-button-submit
+    background: $primary-color
+    border: 1px solid $primary-color
+    color: $color-white
+    transition: 0.3s
+
+  &.footer-button-submit:hover
+    background: $primary-smooth
+    border: 1px solid $primary-smooth
+
+@media (min-width: 500px)
+  .footer > button
+    flex: 0
